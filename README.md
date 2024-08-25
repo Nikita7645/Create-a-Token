@@ -3,23 +3,30 @@
 
  ## ASSESSMENT REQUIREMENTS:
 
-1. Your contract will have public variables that store the details about your coin (`Token Name`, `Token Abbrv.`, `Total Supply`)<br>
-   
-2. Your contract will have a mapping of addresses to balances (`address => uint`)<br>
+This Solidity contract outlines the basic structure for creating a custom cryptocurrency token on the Ethereum blockchain. Let's break down the requirements and the contract code.
 
-3. You will have a mint function that takes two parameters: an address and a value. 
-       The function then increases the total supply by that number and increases the balance 
-       of the `“sender”` address by that amount<br>
-
-4. Your contract will have a burn function, which works the opposite    of the mint function, as it will destroy tokens. 
-       It will take an address and value just like the mint functions. It will then deduct the value from the total supply 
-       and from the balance of the `“sender”`.<br>
-
-5. Lastly, your burn function should have conditionals to make sure the balance of `"sender"` is greater than or equal 
-       to the amount that is supposed to be burned.
-
-## Excuting the program
-To run this program, you can use Remix, an online Solidity IDE. To get started, go to the [Remix](https://remix.ethereum.org/) website.
+1. Public Variables:
+Token Name: The name of your token (e.g., "MyToken").
+Token Abbreviation: A short version or symbol of your token (e.g., "MTK").
+Total Supply: The total number of tokens that exist.
+2. Mapping:
+A mapping is required to store the balance of each address. It links an Ethereum address to the number of tokens owned by that address (address => uint).
+3. Mint Function:
+This function allows the creation of new tokens.
+It takes two parameters:
+An address: The account that will receive the newly minted tokens.
+A value: The number of tokens to mint.
+The function increases the total supply by the specified value and also increases the balance of the specified address by that amount.
+4. Burn Function:
+This function destroys tokens, reducing the total supply.
+It takes two parameters:
+An address: The account from which the tokens will be burned.
+A value: The number of tokens to burn.
+The function checks if the balance of the specified address is greater than or equal to the amount to be burned. If the condition is met, the total supply is decreased by the specified value, and the balance of the specified address is also decreased by that amount.
+5. Executing the Program:
+To run this Solidity contract, you can use Remix, an online IDE for Ethereum smart contracts.
+Simply copy the contract code into Remix, compile it, and then deploy it to start interacting with your token.
+(https://remix.ethereum.org/) website.
 
 ---
 
