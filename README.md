@@ -14,9 +14,7 @@ There you can compile and deploy the code online only without any need to set up
 In Remix IDE, compile the smart contract by pressing CTRL+S or from the left menu.
 When compiled we can deploy the code from the menu itself.
 After deploying we have to enter the required values, and we can check the outputs there only.
-# **Authors**
-Contributors names and contact info:
-
+# **Author**
 Nikita Kumari
 
 # **License**
