@@ -1,11 +1,22 @@
 # **ETH-Proof-Beginner**
-This repository is made as the submission of the course ETH-Proof Beginner offered by Metacrafters. This course provided me the insights of the basics of Etheriumn blockchain as well as Solidity language. The basics of Solidity like variables, structs, mapping, functions, conditional statements were all taught in this course. Also it is used in this project!
+This Solidity program contract provides basic functionalities to mint new tokens and burn existing ones, following the specified requirements.
 
 # **Description**
-The project of this course was to write a smart contract in the solidity, to create a new token. I have named it "jfmartinz" and it's abbreviation is "jmz". Also there are two functions, first being the mint function where if someone mints my tokens, his wallet balance will get updated as well as the total supply of my token. The second function is Burn function, where if someone burns the YSH tokens, it will first check if that person has that much balance or not and then burn accordingly and update the balances.
+This repository contains a Solidity smart contract for creating custom tokens on the Ethereum blockchain. The program was created and compiled on Remix, an online Solidity IDE. https://remix.ethereum.org/.
 
 # **Getting Started**
-I used different concepts of solidity language to write this smart contract like struct, mapping, functions, etc. And I learned this from the course provided by Metacrafters.
+I used different concepts of solidity language to write this smart contract like struct, mapping, functions, etc. And I learned this from the course provided by Metacrafters. 
+# **REQUIREMENTS**
+''' 1. Your contract will have public variables that store the details about your coin (Token Name, Token Abbrv., Total Supply)
+ 2. Your contract will have a mapping of addresses to balances (address => uint)
+ 3. You will have a mint function that takes two parameters: an address and a value. 
+   The function then increases the total supply by that number and increases the balance 
+   of the “sender” address by that amount
+ 4. Your contract will have a burn function, which works the opposite of the mint function, as it will destroy tokens. 
+   It will take an address and value just like the mint functions. It will then deduct the value from the total supply 
+   and from the balance of the “sender”.
+ 5. Lastly, your burn function should have conditionals to make sure the balance of "sender" is greater than or equal  to the amount that is supposed to be burne
+
 
 # **Installing**
 You can test this code by copy-pasting it on the Remix Online IDE for solidity.
