@@ -1,7 +1,7 @@
 # **ETH-Proof-Beginner**
 This Solidity program contract provides basic functionalities to mint new tokens and burn existing ones, following the specified requirements.
 
-# **Description**
+# **Description**  
 This repository contains a Solidity smart contract for creating custom tokens on the Ethereum blockchain. The program was created and compiled on Remix, an online Solidity IDE. https://remix.ethereum.org/.
 
 # **Getting Started**
