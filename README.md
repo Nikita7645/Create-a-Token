@@ -25,6 +25,7 @@ There you can compile and deploy the code online only without any need to set up
 In Remix IDE, compile the smart contract by pressing CTRL+S or from the left menu.
 When compiled we can deploy the code from the menu itself.
 After deploying we have to enter the required values, and we can check the outputs there only.
+https://remix.ethereum.org/#lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.26+commit.8a97fa7a.js
 # **Author**
 Nikita Kumari
 
