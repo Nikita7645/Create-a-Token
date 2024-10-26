@@ -1,26 +1,30 @@
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.18;
+ pragma solidity ^0.8.18;
 
-contract MyToken {
-    // token details
-    string public TokenName = "jfmartinz"; 
-    string public TekonID = "jmz"; 
-    uint public totalSupply = 0;
+contract MyToken
+{
+    string public  Token_Name = "RaghavToken6369";
+    string public  Token_abbrv= "RT"; 
+    uint256 public  Total_Supply=0;
     
-    // mapping variable here
-    mapping(address => uint) public balances;
-    
-    // minting token function
-    function mint (address _address, uint _value) public {
-        totalSupply += _value; 
-        balances[_address] += _value;
+    mapping(address => uint256) public balances;
+
+
+    function Mint (address _a , uint256 _amount)  public 
+    {
+            require(_amount !=0,"Can not add 0  token to your acount");
+            
+            balances[_a]+=_amount;
+            Total_Supply+=_amount;
+
     }
-    
-    // burning token function
-    function burn (address _address, uint _value) public {
-        if (balances[_address] > _value){
-            totalSupply -= _value;
-            balances[_address] -= _value;
-        }
+
+    function Burn (address _a , uint256 _amount)  public 
+    {
+            require(_amount !=0,"Can not remove 0  token to your acount");
+            require(balances[_a]>=_amount,"Balance too low");
+            balances[_a]-=_amount;
+            Total_Supply-=_amount;
+
     }
+
 }
