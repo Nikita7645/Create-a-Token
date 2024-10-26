@@ -2,8 +2,8 @@
 
 contract MyToken
 {
-    string public  Token_Name = "RaghavToken6369";
-    string public  Token_abbrv= "RT"; 
+    string public  Token_Name = "NikitaKumari";
+    string public  Token_abbrv= "NK"; 
     uint256 public  Total_Supply=0;
     
     mapping(address => uint256) public balances;
