@@ -38,7 +38,7 @@ To run this program, you can use Remix, an online Solidity IDE. To get started, 
             require(balances[_a] >= _amount, "Balance too low");
             
             balances[_a] -= _amount;
-            Total_Supply -= _amount;
+            Total_Supply -= _amount; 
         }
     }
     
