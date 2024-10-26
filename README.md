@@ -21,7 +21,9 @@ To run this program, you can use Remix, an online Solidity IDE. To get started, 
 
     contract MyToken {
         string public Token_Name = "Nikita Kumari";
-        string public Token_abbrv = "NK"; 
+   
+        string public Token_abbrv = "NK";
+   
         uint256 public Total_Supply = 0;
         
         mapping(address => uint256) public balances;
@@ -43,11 +45,11 @@ To run this program, you can use Remix, an online Solidity IDE. To get started, 
     }
     
 
-2. To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.18" (or another compatible version), and then click on the "Compile MyToken.sol" button.
+3. To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.18" (or another compatible version), and then click on the "Compile MyToken.sol" button.
 
-3. Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the "MyToken" contract from the dropdown menu, and then click on the "Deploy" button.
+4. Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the "MyToken" contract from the dropdown menu, and then click on the "Deploy" button.
 
-4. Once the contract is deployed, you can interact with it by calling the Mint and Burn functions. Click on the "MyToken" contract in the left-hand sidebar, and then use the input fields to call the desired function. For example, you can mint new tokens to an address or burn tokens from an address.
+5. Once the contract is deployed, you can interact with it by calling the Mint and Burn functions. Click on the "MyToken" contract in the left-hand sidebar, and then use the input fields to call the desired function. For example, you can mint new tokens to an address or burn tokens from an address.
 
 ### Authors
 
