@@ -20,9 +20,9 @@ To run this program, you can use Remix, an online Solidity IDE. To get started, 
     pragma solidity ^0.8.18;
 
     contract MyToken {
-        string public Token_Name = "RaghavToken6369";
-        string public Token_abbrv = "RT"; 
-        uint256 public Total_Supply = 1000;
+        string public Token_Name = "Nikita Kumari";
+        string public Token_abbrv = "NK"; 
+        uint256 public Total_Supply = 0;
         
         mapping(address => uint256) public balances;
 
